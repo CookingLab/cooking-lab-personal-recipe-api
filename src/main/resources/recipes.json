@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Chicken parmesan",
+    "ingredients": ["Chicken"],
+    "instructions": ["Buy Chicken"],
+    "owner": "tm"
+  },
+  {
+    "title": "Taco",
+    "ingredients": ["Taco shells"],
+    "instructions": ["Buy Taco shells"],
+    "owner": "tc"
+  },
+  {
+    "title": "Beef stew",
+    "ingredients": ["Beef"],
+    "instructions": ["Buy Beef"],
+    "owner": "tm"
+  },
+  {
+    "title": "Mango lassi",
+    "ingredients": ["Mango"],
+    "instructions": ["Buy mango"],
+    "owner": "tc"
+  }
+]
