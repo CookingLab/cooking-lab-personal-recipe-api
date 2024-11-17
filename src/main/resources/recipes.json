@@ -1,26 +1,44 @@
 [
   {
-    "title": "Chicken parmesan",
-    "ingredients": ["Chicken"],
-    "instructions": ["Buy Chicken"],
+    "id": 1,
+    "title": "The Minh's Tiramisu",
+    "ingredients": ["Mascarpone cheese", "2 eggs", "125ml of sugar", "Cacao powder", "Whipped cream", "Coffee", "Ladyfingers cookies"],
+    "instructions": ["Mix the eggs yolks with sugar until a creamy texture.",
+                      "Add mascarpone cheese to the mix and continue mixing.",
+                      "Add whipped cream and mix until a consistant mixture.",
+                      "Prepare coffee and dip the ladyfingers cookies in it.",
+                      "Place the cookies into a rectangular plate.",
+                      "Cover the top of the cookies with the mixture to make a first layer.",
+                      "Make a second layer with the cookies and the mixture.",
+                      "Cover the top with cacao powder.",
+                      "Let the cake rest for 4 hours in the fridge.",
+                      "Serve!"],
     "owner": "tm"
   },
   {
-    "title": "Taco",
-    "ingredients": ["Taco shells"],
-    "instructions": ["Buy Taco shells"],
+    "id": 2,
+    "title": "Tien's Spaghetti",
+    "ingredients": ["Spaghetti pasta", "Tomato sauce", "Garlic", "Minced porc", "Tomato paste"],
+    "instructions": ["Caramelise the garlic in a pan.",
+                    "Add the minced porc.",
+                    "Add the tomato sauce and the tomato paste and mix.",
+                    "Mix.",
+                    "Cook the spaghetti pasta.",
+                    "Serve the spaghetti pasta with the spaghetti sauce."],
     "owner": "tc"
   },
   {
-    "title": "Beef stew",
-    "ingredients": ["Beef"],
-    "instructions": ["Buy Beef"],
+    "id": 3,
+    "title": "Placeholder",
+    "ingredients": ["Placeholder"],
+    "instructions": ["Placeholder"],
+    "owner": "tc"
+  },
+  {
+    "id": 4,
+    "title": "Placeholder",
+    "ingredients": ["Placeholder"],
+    "instructions": ["Placeholder"],
     "owner": "tm"
-  },
-  {
-    "title": "Mango lassi",
-    "ingredients": ["Mango"],
-    "instructions": ["Buy mango"],
-    "owner": "tc"
   }
 ]

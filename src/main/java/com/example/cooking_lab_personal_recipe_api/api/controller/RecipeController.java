@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -20,10 +21,18 @@ public class RecipeController {
     }
 
     @GetMapping("/api/recipes/personal")
-    public List<Recipe> getRecipe(@RequestParam(required = false) String owner){
-        if (owner == null || owner.isEmpty()) {
+    public List<Recipe> getRecipe(@RequestParam(required = false) String owner, @RequestParam(required = false) Integer id) {
+        if (id != null && owner != null) {
+            throw new IllegalArgumentException("Please specify only one parameter: 'id' or 'owner', not both.");
+        }
+
+        if (id != null) {
+            return recipeService.getRecipeById(id);
+        } else if (owner != null && !owner.isEmpty()) {
+            return recipeService.getRecipeByOwner(owner);
+        } else {
             return recipeService.getAllRecipes();
         }
-        return recipeService.getRecipeByOwner(owner);
     }
+
 }

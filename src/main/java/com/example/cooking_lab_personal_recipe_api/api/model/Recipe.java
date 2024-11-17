@@ -2,6 +2,7 @@ package com.example.cooking_lab_personal_recipe_api.api.model;
 import java.util.List;
 
 public class Recipe {
+    private int id;
     private String title;
     private List<String> ingredients;
     private List<String> instructions;
@@ -10,7 +11,8 @@ public class Recipe {
     // Constructor
     public Recipe() {
     }
-    public Recipe(String title, List<String> ingredients, List<String> instructions, String owner) {
+    public Recipe(int id, String title, List<String> ingredients, List<String> instructions, String owner) {
+        this.id = id;
         this.title = title;
         this.ingredients = ingredients;
         this.instructions = instructions;
@@ -18,6 +20,13 @@ public class Recipe {
     }
 
     // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getTitle() {
         return title;
     }
@@ -53,6 +62,7 @@ public class Recipe {
     @Override
     public String toString() {
         return "Recipe{" +
+                ", id='" + id + '\'' +
                 ", title='" + title + '\'' +
                 ", ingredients=" + ingredients +
                 ", instructions=" + instructions +

@@ -49,4 +49,15 @@ public class RecipeService {
         }
         return targetRecipes;
     }
+
+    public List<Recipe> getRecipeById(int id) {
+        List<Recipe> targetRecipes = new ArrayList<>();
+        for(Recipe recipe : recipeList){
+            if(id == recipe.getId()){
+                targetRecipes.add(recipe);
+            }
+        }
+        return targetRecipes;
+    }
+
 }
