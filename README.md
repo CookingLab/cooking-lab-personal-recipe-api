@@ -20,6 +20,11 @@ To install this project, follow the steps below:
     ```sh
     ./mvnw install
     ```
+   If you get **./mvnw: Permission denied** error, run the following command line:
+   ```sh
+   chmod +x ./mvnw
+   ./mvnw install
+   ```
 
 4. Run the application:
     ```sh
