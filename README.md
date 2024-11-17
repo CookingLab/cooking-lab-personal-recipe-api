@@ -1,5 +1,7 @@
 # cooking-lab-personal-recipe-api
 
+This API exposes our personal recipes for Cooking Lab.
+
 ## Installation 🛠️
 
 To install this project, follow the steps below:
