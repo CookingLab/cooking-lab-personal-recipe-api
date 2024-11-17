@@ -1,5 +1,31 @@
 # cooking-lab-personal-recipe-api
 
+## Installation 🛠️
+
+To install this project, follow the steps below:
+
+1. Clone the project:
+    ```sh
+    git clone https://github.com/CookingLab/cooking-lab-personal-recipe-api.git
+    ```
+
+2. Navigate to the project directory:
+    ```sh
+    cd cooking-lab-personal-recipe-api
+    ```
+
+3. Install the dependencies:
+    ```sh
+    ./mvnw install
+    ```
+
+4. Run the application:
+    ```sh
+    ./mvnw spring-boot:run
+    ```
+
+The application should now be running on `http://localhost:8080`.
+
 ## API Endpoints
 
 ### Get Personal Recipes
