@@ -20,7 +20,7 @@ public class RecipeController {
         this.recipeService = recipeService;
     }
 
-    @CrossOrigin(origins = {"http://localhost:3000", "https://cooking-lab-personal-recipe-api.onrender.com"})
+    @CrossOrigin(origins = {"http://localhost:3000", "https://cooking-lab.netlify.app"})
     @GetMapping("/api/recipes/personal")
     public List<Recipe> getRecipe(@RequestParam(required = false) String owner, @RequestParam(required = false) Integer id) {
         if (id != null && owner != null) {
