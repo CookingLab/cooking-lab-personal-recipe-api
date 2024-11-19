@@ -7,16 +7,18 @@ public class Recipe {
     private List<String> ingredients;
     private List<String> instructions;
     private String owner;
+    private String imageURL;
 
     // Constructor
     public Recipe() {
     }
-    public Recipe(int id, String title, List<String> ingredients, List<String> instructions, String owner) {
+    public Recipe(int id, String title, List<String> ingredients, List<String> instructions, String owner, String imageURL) {
         this.id = id;
         this.title = title;
         this.ingredients = ingredients;
         this.instructions = instructions;
         this.owner = owner;
+        this.imageURL = imageURL;
     }
 
     // Getters and Setters
@@ -59,6 +61,14 @@ public class Recipe {
         this.owner = owner;
     }
 
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
     @Override
     public String toString() {
         return "Recipe{" +
@@ -67,6 +77,7 @@ public class Recipe {
                 ", ingredients=" + ingredients +
                 ", instructions=" + instructions +
                 ", owner='" + owner + '\'' +
+                ", imageURL='" + imageURL + '\'' +
                 '}';
     }
 }

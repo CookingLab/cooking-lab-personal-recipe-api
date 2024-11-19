@@ -13,7 +13,8 @@
                       "Cover the top with cacao powder.",
                       "Let the cake rest for 4 hours in the fridge.",
                       "Serve!"],
-    "owner": "tm"
+    "owner": "tm",
+    "imageURL": "https://www.culinaryhill.com/wp-content/uploads/2021/01/Tiramisu-Culinary-Hill-1200x800-1.jpg"
   },
   {
     "id": 2,
@@ -25,20 +26,23 @@
                     "Mix.",
                     "Cook the spaghetti pasta.",
                     "Serve the spaghetti pasta with the spaghetti sauce."],
-    "owner": "tc"
+    "owner": "tc",
+    "imageURL": "https://images.radio-canada.ca/q_auto,w_844/v1/alimentation/recette/16x9/ogleman-spaghetti-boulettes.jpg"
   },
   {
     "id": 3,
     "title": "Placeholder",
     "ingredients": ["Placeholder"],
     "instructions": ["Placeholder"],
-    "owner": "tc"
+    "owner": "tc",
+    "imageURL": "https://www.kitchenstuffplus.com/media/catalog/product/9/2/92744_oxford-dinner-plate-11-dia__210216141733242_0zngnf01oc5ug83p.jpg"
   },
   {
     "id": 4,
     "title": "Placeholder",
     "ingredients": ["Placeholder"],
     "instructions": ["Placeholder"],
-    "owner": "tm"
+    "owner": "tm",
+    "imageURL": "https://www.kitchenstuffplus.com/media/catalog/product/9/2/92744_oxford-dinner-plate-11-dia__210216141733242_0zngnf01oc5ug83p.jpg"
   }
 ]
