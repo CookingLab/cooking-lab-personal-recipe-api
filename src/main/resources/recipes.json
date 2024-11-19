@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "The Minh's Tiramisu",
+    "title": "Tiramisu",
     "ingredients": ["Mascarpone cheese", "2 eggs", "125ml of sugar", "Cacao powder", "Whipped cream", "Coffee", "Ladyfingers cookies"],
     "instructions": ["Mix the eggs yolks with sugar until a creamy texture.",
                       "Add mascarpone cheese to the mix and continue mixing.",
@@ -18,7 +18,7 @@
   },
   {
     "id": 2,
-    "title": "Tien's Spaghetti",
+    "title": "Spaghetti",
     "ingredients": ["Spaghetti pasta", "Tomato sauce", "Garlic", "Minced pork", "Tomato paste"],
     "instructions": ["Caramelise the garlic in a pan.",
                     "Add the minced pork.",
@@ -31,7 +31,7 @@
   },
   {
     "id": 3,
-    "title": "Tien's Banana Bread",
+    "title": "Banana Bread",
     "ingredients": ["3 Ripe banana", "1 Cup of sugar", "1/2 Cup of unsalted butter", "1 Tsp vanilla extract", "2.5 Cup of all purpose flour", "1 Tsp baking soda", "1 Tsp salt", "1/2 Cup of milk", "2 Eggs"],
     "instructions": ["In a large bowl, mash the bananas.",
       "Add sugar in melted butter.",
@@ -47,7 +47,7 @@
   },
   {
     "id": 4,
-    "title": "The Minh's french toast",
+    "title": "French toast",
     "ingredients": ["2 slices of bread", "2 eggs", "Vanilla extract", "Butter", "Maple syrup", "Any fruits (Raspberries and blueberries recommended)"],
     "instructions": ["Melt butter on a pan.",
                     "Toast the slices of bread.",
@@ -60,7 +60,7 @@
   },
   {
     "id": 5,
-    "title": "The Minh's Panna Cotta",
+    "title": "Panna Cotta",
     "ingredients": ["35% heavy cream", "Milk", "Gelatin", "Honey", "Vanilla extract", "Lemon juice", "Strawberry Jello", "Sugar", "Water"],
     "instructions": ["Prepare the Jello into a container.",
                     "Put in the fridge for 10 to 20 minutes.",
@@ -75,7 +75,7 @@
   },
   {
     "id": 6,
-    "title": "The Minh's Doce de Bolacha",
+    "title": "Doce de Bolacha",
     "ingredients": ["35% cream", "Condensed milk", "Coffee", "2 eggs yolks", "Sugar", "Cookies"],
     "instructions": ["Prepare coffee.",
                     "Mix and boil 2 eggs yolks with condensed milk and coffee until a creamy texture.",
@@ -89,7 +89,7 @@
   },
   {
     "id": 7,
-    "title": "Tien's Kani Salad",
+    "title": "Kani Salad",
     "ingredients": ["300g Imitation crab meat", "1 Cucumber","1 Carrot", "Kewpie Mayonnaise", "Sriracha sauce", "Tobiko"],
     "instructions": ["Dice the cucumber and carrot in Julienne cute.",
       "Shred the imitation crab meat.",
