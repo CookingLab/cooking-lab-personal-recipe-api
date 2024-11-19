@@ -19,9 +19,9 @@
   {
     "id": 2,
     "title": "Tien's Spaghetti",
-    "ingredients": ["Spaghetti pasta", "Tomato sauce", "Garlic", "Minced porc", "Tomato paste"],
+    "ingredients": ["Spaghetti pasta", "Tomato sauce", "Garlic", "Minced pork", "Tomato paste"],
     "instructions": ["Caramelise the garlic in a pan.",
-                    "Add the minced porc.",
+                    "Add the minced pork.",
                     "Add the tomato sauce and the tomato paste and mix.",
                     "Mix.",
                     "Cook the spaghetti pasta.",
@@ -31,18 +31,74 @@
   },
   {
     "id": 3,
-    "title": "Placeholder",
-    "ingredients": ["Placeholder"],
-    "instructions": ["Placeholder"],
+    "title": "Tien's Banana Bread",
+    "ingredients": ["3 Ripe banana", "1 Cup of sugar", "1/2 Cup of unsalted butter", "1 Tsp vanilla extract", "2.5 Cup of all purpose flour", "1 Tsp baking soda", "1 Tsp salt", "1/2 Cup of milk", "2 Eggs"],
+    "instructions": ["In a large bowl, mash the bananas.",
+      "Add sugar in melted butter.",
+      "Add mashed bananas to sugar and butter mixture.",
+      "Add eggs, vanilla extract, and milk to the mixture.",
+      "Slowly pour in the flour, baking soda, and salt while mixing.",
+      "Pour the batter into 9 x 5 inch loaf pan.",
+      "Bake at 350F for 1 hour or until baked.",
+      "Let it cool before serving."
+    ],
     "owner": "tc",
-    "imageURL": "https://www.kitchenstuffplus.com/media/catalog/product/9/2/92744_oxford-dinner-plate-11-dia__210216141733242_0zngnf01oc5ug83p.jpg"
+    "imageURL": "https://media.istockphoto.com/id/478982483/photo/homemade-banana-nut-bread.jpg?s=612x612&w=0&k=20&c=FS3I_44AqNftftR5ELtkNxAgHSB6SVS8osdh1NZIIFw="
   },
   {
     "id": 4,
-    "title": "Placeholder",
-    "ingredients": ["Placeholder"],
-    "instructions": ["Placeholder"],
+    "title": "The Minh's french toast",
+    "ingredients": ["2 slices of bread", "2 eggs", "Vanilla extract", "Butter", "Maple syrup", "Any fruits (Raspberries and blueberries recommended)"],
+    "instructions": ["Melt butter on a pan.",
+                    "Toast the slices of bread.",
+                    "In a bowl, mix the eggs with 3 drops of vanilla extract.",
+                    "Cover the slices of bread with the mix.",
+                    "Fry the slices of bread until a golden color.",
+                    "Serve with maple syrup and fruits."],
     "owner": "tm",
-    "imageURL": "https://www.kitchenstuffplus.com/media/catalog/product/9/2/92744_oxford-dinner-plate-11-dia__210216141733242_0zngnf01oc5ug83p.jpg"
+    "imageURL": "https://www.mccormick.com/-/media/project/oneweb/mccormick-us/mccormick/recipe-images/quick_and_easy_french_toast_new_800x800.webp?rev=ee6ad2bb4e784ae3b47792fe1567e606&vd=20240606T181333Z&extension=webp&hash=239069BA7916AD55FF124E6E65F4C335"
+  },
+  {
+    "id": 5,
+    "title": "The Minh's Panna Cotta",
+    "ingredients": ["35% heavy cream", "Milk", "Gelatin", "Honey", "Vanilla extract", "Lemon juice", "Strawberry Jello", "Sugar", "Water"],
+    "instructions": ["Prepare the Jello into a container.",
+                    "Put in the fridge for 10 to 20 minutes.",
+                    "Mix milk with gelatin.",
+                    "Boil the mix with cream, honey, vanilla extract, lemon juice and sugar.",
+                    "Cool with a bowl of cold water.",
+                    "Put the mix the Jello container.",
+                    "Put in the fridge for 10 to 20 minutes.",
+                    "Serve!"],
+    "owner": "tm",
+    "imageURL": "https://mapatisserie.fr/wp-content/uploads/2023/08/recette-pannacotta-IMG_0254-e1693376134445.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Minh's Doce de Bolacha",
+    "ingredients": ["35% cream", "Condensed milk", "Coffee", "2 eggs yolks", "Sugar", "Cookies"],
+    "instructions": ["Prepare coffee.",
+                    "Mix and boil 2 eggs yolks with condensed milk and coffee until a creamy texture.",
+                    "Put the mix in the fridge for 15 minutes.",
+                    "Crush the cookies.",
+                    "Mix the cream with sugar.",
+                    "Put the cream into a container.",
+                    "Put the crushed cookies on top and serve."],
+    "owner": "tm",
+    "imageURL": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/BBAF35EB-6DF2-42D4-99EB-78EF9F21B2A3/Derivates/53B7B57E-1B96-4AF9-BC2E-DFF049B2C787.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Tien's Kani Salad",
+    "ingredients": ["300g Imitation crab meat", "1 Cucumber","1 Carrot", "Kewpie Mayonnaise", "Sriracha sauce", "Tobiko"],
+    "instructions": ["Dice the cucumber and carrot in Julienne cute.",
+      "Shred the imitation crab meat.",
+      "Mix the cucumber, carrot, and imitation crab meat in a bowl.",
+      "Add your desired Kewpie Mayonnaise and Sriracha sauce to the mixture.",
+      "Mix well and add tobiko on top.",
+      "Serve!"
+    ],
+    "owner": "tc",
+    "imageURL": "https://theheirloompantry.co/wp-content/uploads/2022/03/how-to-make-spicy-kani-salad-with-tobiko-and-cucumber-the-heirloom-pantry-1.jpg"
   }
 ]
