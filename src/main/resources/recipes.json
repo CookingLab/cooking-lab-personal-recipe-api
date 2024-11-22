@@ -48,13 +48,13 @@
   {
     "id": 4,
     "title": "French Toast",
-    "ingredients": ["2 slices of bread", "2 eggs", "Vanilla extract", "Butter", "Maple syrup", "Any fruits (Raspberries and blueberries recommended)"],
+    "ingredients": ["2 slices of bread", "2 eggs", "Vanilla extract", "Butter", "Maple syrup", "Whipped cream", "Any fruits (Raspberries and blueberries recommended)"],
     "instructions": ["Melt butter on a pan.",
                     "Toast the slices of bread.",
                     "In a bowl, mix the eggs with 3 drops of vanilla extract.",
                     "Cover the slices of bread with the mix.",
                     "Fry the slices of bread until a golden color.",
-                    "Serve with maple syrup and fruits."],
+                    "Serve with maple syrup, whipped cream and fruits."],
     "owner": "tm",
     "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/french-toast.jpg"
   },
