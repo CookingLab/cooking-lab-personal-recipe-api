@@ -27,7 +27,7 @@
                     "Cook the spaghetti pasta.",
                     "Serve the spaghetti pasta with the spaghetti sauce."],
     "owner": "tc",
-    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/spaghetti"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/spaghetti.jpg"
   },
   {
     "id": 3,
