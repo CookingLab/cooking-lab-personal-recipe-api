@@ -14,7 +14,7 @@
                       "Let the cake rest for 4 hours in the fridge.",
                       "Serve!"],
     "owner": "tm",
-    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/tiramisu.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/tiramisu.jpg"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
                     "Cook the spaghetti pasta.",
                     "Serve the spaghetti pasta with the spaghetti sauce."],
     "owner": "tc",
-    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/spaghetti"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/spaghetti"
   },
   {
     "id": 3,
@@ -43,7 +43,7 @@
       "Let it cool before serving."
     ],
     "owner": "tc",
-    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/banana-bread.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/banana-bread.jpg"
   },
   {
     "id": 4,
@@ -56,7 +56,7 @@
                     "Fry the slices of bread until a golden color.",
                     "Serve with maple syrup and fruits."],
     "owner": "tm",
-    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/french-toast.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/french-toast.jpg"
   },
   {
     "id": 5,
@@ -71,7 +71,7 @@
                     "Put in the fridge for 10 to 20 minutes.",
                     "Serve!"],
     "owner": "tm",
-    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/panna-cotta.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/panna-cotta.jpg"
   },
   {
     "id": 6,
@@ -85,7 +85,7 @@
                     "Put the cream into a container.",
                     "Put the crushed cookies on top and serve."],
     "owner": "tm",
-    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/doce.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/doce.jpg"
   },
   {
     "id": 7,
@@ -99,6 +99,6 @@
       "Serve!"
     ],
     "owner": "tc",
-    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/kani-salad.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/kani-salad.jpg"
   }
 ]
