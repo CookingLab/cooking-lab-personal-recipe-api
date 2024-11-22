@@ -14,7 +14,7 @@
                       "Let the cake rest for 4 hours in the fridge.",
                       "Serve!"],
     "owner": "tm",
-    "imageURL": "https://www.culinaryhill.com/wp-content/uploads/2021/01/Tiramisu-Culinary-Hill-1200x800-1.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/tiramisu.jpg"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
                     "Cook the spaghetti pasta.",
                     "Serve the spaghetti pasta with the spaghetti sauce."],
     "owner": "tc",
-    "imageURL": "https://images.radio-canada.ca/q_auto,w_844/v1/alimentation/recette/16x9/ogleman-spaghetti-boulettes.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/spaghetti"
   },
   {
     "id": 3,
@@ -43,11 +43,11 @@
       "Let it cool before serving."
     ],
     "owner": "tc",
-    "imageURL": "https://media.istockphoto.com/id/478982483/photo/homemade-banana-nut-bread.jpg?s=612x612&w=0&k=20&c=FS3I_44AqNftftR5ELtkNxAgHSB6SVS8osdh1NZIIFw="
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/banana-bread.jpg"
   },
   {
     "id": 4,
-    "title": "French toast",
+    "title": "French Toast",
     "ingredients": ["2 slices of bread", "2 eggs", "Vanilla extract", "Butter", "Maple syrup", "Any fruits (Raspberries and blueberries recommended)"],
     "instructions": ["Melt butter on a pan.",
                     "Toast the slices of bread.",
@@ -56,7 +56,7 @@
                     "Fry the slices of bread until a golden color.",
                     "Serve with maple syrup and fruits."],
     "owner": "tm",
-    "imageURL": "https://www.mccormick.com/-/media/project/oneweb/mccormick-us/mccormick/recipe-images/quick_and_easy_french_toast_new_800x800.webp?rev=ee6ad2bb4e784ae3b47792fe1567e606&vd=20240606T181333Z&extension=webp&hash=239069BA7916AD55FF124E6E65F4C335"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/french-toast.jpg"
   },
   {
     "id": 5,
@@ -71,7 +71,7 @@
                     "Put in the fridge for 10 to 20 minutes.",
                     "Serve!"],
     "owner": "tm",
-    "imageURL": "https://mapatisserie.fr/wp-content/uploads/2023/08/recette-pannacotta-IMG_0254-e1693376134445.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/panna-cotta.jpg"
   },
   {
     "id": 6,
@@ -85,7 +85,7 @@
                     "Put the cream into a container.",
                     "Put the crushed cookies on top and serve."],
     "owner": "tm",
-    "imageURL": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/BBAF35EB-6DF2-42D4-99EB-78EF9F21B2A3/Derivates/53B7B57E-1B96-4AF9-BC2E-DFF049B2C787.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/doce.jpg"
   },
   {
     "id": 7,
@@ -99,6 +99,6 @@
       "Serve!"
     ],
     "owner": "tc",
-    "imageURL": "https://theheirloompantry.co/wp-content/uploads/2022/03/how-to-make-spicy-kani-salad-with-tobiko-and-cucumber-the-heirloom-pantry-1.jpg"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/kani-salad.jpg"
   }
 ]
