@@ -72,7 +72,7 @@ public class Recipe {
     @Override
     public String toString() {
         return "Recipe{" +
-                ", id='" + id + '\'' +
+                "id='" + id + '\'' +
                 ", title='" + title + '\'' +
                 ", ingredients=" + ingredients +
                 ", instructions=" + instructions +

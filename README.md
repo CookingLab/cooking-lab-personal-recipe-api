@@ -66,7 +66,7 @@ GET /api/recipes/personal?owner=tm
     "ingredients": ["Chicken"],
     "instructions": ["Buy Chicken"],
     "owner": "tm",
-    "imageURL": "https://cooking-lab.netlify.app/static/media/cookingLabLogo2.9ecf8f57e651fb475f8b.png"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/chicken-parmesan.jpg"
   },
   {
     "id": 2,
@@ -74,7 +74,7 @@ GET /api/recipes/personal?owner=tm
     "ingredients": ["Beef"],
     "instructions": ["Buy Beef"],
     "owner": "tm",
-    "imageURL": "https://cooking-lab.netlify.app/static/media/cookingLabLogo2.9ecf8f57e651fb475f8b.png"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/beef-stew.jpg"
   }
 ]
 ```
@@ -95,7 +95,7 @@ GET /api/recipes/personal?id=1
     "ingredients": ["Chicken"],
     "instructions": ["Buy Chicken"],
     "owner": "tm",
-    "imageURL": "https://cooking-lab.netlify.app/static/media/cookingLabLogo2.9ecf8f57e651fb475f8b.png"
+    "imageURL": "https://cooking-lab-personal-recipe-api.onrender.com/images/chicken-parmesan.jpg"
   }
 ]
 ```
