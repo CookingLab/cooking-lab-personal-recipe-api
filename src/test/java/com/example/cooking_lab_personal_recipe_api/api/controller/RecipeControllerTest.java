@@ -26,19 +26,11 @@ public class RecipeControllerTest {
     }
 
     @Test
-    public void testGetRecipeWithBothIdAndOwner() {
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
-            recipeController.getRecipe("owner", 1);
-        });
-        assertEquals("Please specify only one parameter: 'id' or 'owner', not both.", exception.getMessage());
-    }
-
-    @Test
     public void testGetRecipeWithId() {
         Recipe recipe = new Recipe();
         when(recipeService.getRecipeById(1)).thenReturn(Collections.singletonList(recipe));
 
-        List<Recipe> result = recipeController.getRecipe(null, 1);
+        List<Recipe> result = recipeController.getRecipeId(1);
         assertEquals(1, result.size());
         assertEquals(recipe, result.get(0));
     }
@@ -48,7 +40,7 @@ public class RecipeControllerTest {
         Recipe recipe = new Recipe();
         when(recipeService.getRecipeByOwner("owner")).thenReturn(Collections.singletonList(recipe));
 
-        List<Recipe> result = recipeController.getRecipe("owner", null);
+        List<Recipe> result = recipeController.getRecipe("owner");
         assertEquals(1, result.size());
         assertEquals(recipe, result.get(0));
     }
@@ -58,7 +50,17 @@ public class RecipeControllerTest {
         Recipe recipe = new Recipe();
         when(recipeService.getAllRecipes()).thenReturn(Collections.singletonList(recipe));
 
-        List<Recipe> result = recipeController.getRecipe(null, null);
+        List<Recipe> result = recipeController.getRecipe(null);
+        assertEquals(1, result.size());
+        assertEquals(recipe, result.get(0));
+    }
+
+    @Test
+    public void testGetRecipeIdWithNoParams() {
+        Recipe recipe = new Recipe();
+        when(recipeService.getAllRecipes()).thenReturn(Collections.singletonList(recipe));
+
+        List<Recipe> result = recipeController.getRecipeId(null);
         assertEquals(1, result.size());
         assertEquals(recipe, result.get(0));
     }

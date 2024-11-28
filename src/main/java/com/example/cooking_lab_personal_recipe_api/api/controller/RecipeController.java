@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -22,18 +23,21 @@ public class RecipeController {
 
     @CrossOrigin(origins = {"http://localhost:3000", "https://cooking-lab.netlify.app"})
     @GetMapping("/api/recipes/personal")
-    public List<Recipe> getRecipe(@RequestParam(required = false) String owner, @RequestParam(required = false) Integer id) {
-        if (id != null && owner != null) {
-            throw new IllegalArgumentException("Please specify only one parameter: 'id' or 'owner', not both.");
-        }
-
-        if (id != null) {
-            return recipeService.getRecipeById(id);
-        } else if (owner != null && !owner.isEmpty()) {
+    public List<Recipe> getRecipe(@RequestParam(required = false) String owner) {
+        if (owner != null && !owner.isEmpty()) {
             return recipeService.getRecipeByOwner(owner);
         } else {
             return recipeService.getAllRecipes();
         }
     }
 
+    @CrossOrigin(origins = {"http://localhost:3000", "https://cooking-lab.netlify.app"})
+    @GetMapping("/api/recipes/personal/{id}")
+    public List<Recipe> getRecipeId(@PathVariable Integer id) {
+        if (id != null) {
+            return recipeService.getRecipeById(id);
+        } else {
+            return recipeService.getAllRecipes();
+        }
+    }
 }
