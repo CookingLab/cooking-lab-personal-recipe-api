@@ -54,12 +54,7 @@ Only one of the 2 parameters can be specified.
 
 - Get recipe by owner
 ```sh
-GET /api/recipes/personal?owner=tm
-```
-
-- Get recipe by id
-```sh
-GET /api/recipes/personal/1
+  GET /api/recipes/personal?owner=tm
 ```
 
 **Example Response:**
@@ -87,8 +82,9 @@ GET /api/recipes/personal/1
 
 **Example Request:**
 
+- Get recipe by id
 ```sh
-GET /api/recipes/personal?id=1
+  GET /api/recipes/personal/1
 ```
 
 **Example Response:**
