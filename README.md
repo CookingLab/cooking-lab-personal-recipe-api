@@ -52,8 +52,14 @@ Only one of the 2 parameters can be specified.
 
 **Example Request:**
 
+- Get recipe by owner
 ```sh
 GET /api/recipes/personal?owner=tm
+```
+
+- Get recipe by id
+```sh
+GET /api/recipes/personal/1
 ```
 
 **Example Response:**
