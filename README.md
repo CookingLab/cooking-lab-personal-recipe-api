@@ -42,7 +42,7 @@ The application should now be running on `http://localhost:8080`.
 **Method:** `GET`
 
 **Description:** This endpoint retrieves personal recipes. If the `owner` parameter is provided, it filters recipes by the specified owner. If the `owner` parameter is not provided, it returns all recipes.   
-If the `id` parameter is provided, it filters recipes by the specified id. If the `id` parameter is not provided, it returns all recipes.   
+The `id` path is provided after `personal/{id}`, it filters recipes by the specified id. If the `id` path is not provided, it returns all recipes.   
 Only one of the 2 parameters can be specified.   
 
 **Parameters:**
@@ -52,8 +52,9 @@ Only one of the 2 parameters can be specified.
 
 **Example Request:**
 
+- Get recipe by owner
 ```sh
-GET /api/recipes/personal?owner=tm
+  GET /api/recipes/personal?owner=tm
 ```
 
 **Example Response:**
@@ -81,8 +82,9 @@ GET /api/recipes/personal?owner=tm
 
 **Example Request:**
 
+- Get recipe by id
 ```sh
-GET /api/recipes/personal?id=1
+  GET /api/recipes/personal/1
 ```
 
 **Example Response:**
