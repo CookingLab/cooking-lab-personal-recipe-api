@@ -41,18 +41,36 @@ The application should now be running on `http://localhost:8080`.
 
 **Method:** `GET`
 
-**Description:** This endpoint retrieves personal recipes. If the `owner` parameter is provided, it filters recipes by the specified owner. If the `owner` parameter is not provided, it returns all recipes.   
-The `id` path is provided after `personal/{id}`, it filters recipes by the specified id. If the `id` path is not provided, it returns all recipes.   
-Only one of the 2 parameters can be specified.   
+**Description:** This endpoint retrieves personal recipes. It supports filtering recipes based on the `owner` query parameter or the `id` path parameter. If neither is provided, it returns all recipes. Only one of the two parameters can be specified per request.
 
 **Parameters:**
 
 - `owner` (optional): The owner of the recipes to filter by.
-- `id` (optional): Unique id of the recipe.
+- `id` (optional): Unique ID of the recipe (specified as a path parameter).
 
-**Example Request:**
+**Behavior:**
 
-- Get recipe by owner
+- If the `owner` parameter is provided, the endpoint filters recipes by the specified owner.
+- If the `id` path parameter is provided, the endpoint filters recipes by the specified ID.
+- If neither parameter is provided, the endpoint returns all recipes.
+- If an error occurs (e.g., invalid parameters, service issues), the API returns appropriate HTTP status codes and error messages.
+
+---
+
+### Status Codes
+
+| **Status Code**         | **Description**                                                                 |
+|--------------------------|---------------------------------------------------------------------------------|
+| **200 OK**              | Request was successful, and the recipes are returned.                         |
+| **400 Bad Request**     | The request is invalid, such as when the `id` is null or malformed.            |
+| **404 Not Found**       | No recipes were found for the given `owner` or `id`, or there are no recipes.  |
+| **500 Internal Server Error** | An unexpected error occurred while processing the request.               |
+
+---
+
+### Example Requests and Responses
+
+#### Get Recipe by Owner
 ```sh
   GET /api/recipes/personal?owner=tm
 ```
@@ -80,14 +98,14 @@ Only one of the 2 parameters can be specified.
 ]
 ```
 
-**Example Request:**
+### Example Request:
 
-- Get recipe by id
+#### Get recipe by id
 ```sh
   GET /api/recipes/personal/1
 ```
 
-**Example Response:**
+### Example Response:
 
 ```json
 [

@@ -7,10 +7,11 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
 import java.util.Collections;
-import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
 public class RecipeControllerTest {
@@ -24,25 +25,19 @@ public class RecipeControllerTest {
     public void setUp() {
         MockitoAnnotations.openMocks(this);
     }
-
-    @Test
-    public void testGetRecipeWithId() {
-        Recipe recipe = new Recipe();
-        when(recipeService.getRecipeById(1)).thenReturn(Collections.singletonList(recipe));
-
-        List<Recipe> result = recipeController.getRecipeId(1);
-        assertEquals(1, result.size());
-        assertEquals(recipe, result.get(0));
-    }
-
     @Test
     public void testGetRecipeWithOwner() {
         Recipe recipe = new Recipe();
-        when(recipeService.getRecipeByOwner("owner")).thenReturn(Collections.singletonList(recipe));
+        when(recipeService.getRecipeByOwner("tm")).thenReturn(Collections.singletonList(recipe));
 
-        List<Recipe> result = recipeController.getRecipe("owner");
-        assertEquals(1, result.size());
-        assertEquals(recipe, result.get(0));
+        ResponseEntity<?> result = recipeController.getRecipe("tm");
+        assertEquals(HttpStatus.OK, result.getStatusCode());
+    }
+
+    @Test
+    public void testGetRecipeWithOwnerAndEmptyList() {
+        ResponseEntity<?> result = recipeController.getRecipe("tm");
+        assertEquals(HttpStatus.NOT_FOUND, result.getStatusCode());
     }
 
     @Test
@@ -50,9 +45,22 @@ public class RecipeControllerTest {
         Recipe recipe = new Recipe();
         when(recipeService.getAllRecipes()).thenReturn(Collections.singletonList(recipe));
 
-        List<Recipe> result = recipeController.getRecipe(null);
-        assertEquals(1, result.size());
-        assertEquals(recipe, result.get(0));
+        ResponseEntity<?> result = recipeController.getRecipe(null);
+        assertEquals(HttpStatus.OK, result.getStatusCode());
+    }
+
+    @Test
+    public void testGetRecipeWithNoParamsAndEmptyList() {
+        ResponseEntity<?> result = recipeController.getRecipe(null);
+        assertEquals(HttpStatus.NOT_FOUND, result.getStatusCode());
+    }
+
+    @Test
+    public void testGetRecipeWithOwnerException() {
+        when(recipeService.getRecipeByOwner("tm")).thenThrow(new RuntimeException("Service exception"));
+        ResponseEntity<?> result = recipeController.getRecipe("tm");
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, result.getStatusCode());
+        assertEquals("An error occurred while processing the request.", result.getBody());
     }
 
     @Test
@@ -60,8 +68,30 @@ public class RecipeControllerTest {
         Recipe recipe = new Recipe();
         when(recipeService.getAllRecipes()).thenReturn(Collections.singletonList(recipe));
 
-        List<Recipe> result = recipeController.getRecipeId(null);
-        assertEquals(1, result.size());
-        assertEquals(recipe, result.get(0));
+        ResponseEntity<?> result = recipeController.getRecipeId(null);
+        assertEquals(HttpStatus.BAD_REQUEST, result.getStatusCode());
+    }
+
+    @Test
+    public void testGetRecipeWithId() {
+        Recipe recipe = new Recipe();
+        when(recipeService.getRecipeById(1)).thenReturn(Collections.singletonList(recipe));
+
+        ResponseEntity<?> result = recipeController.getRecipeId(1);
+        assertEquals(HttpStatus.OK, result.getStatusCode());
+    }
+
+    @Test
+    public void testGetRecipeWithIdAndEmptyList() {
+        ResponseEntity<?> result = recipeController.getRecipeId(1);
+        assertEquals(HttpStatus.NOT_FOUND, result.getStatusCode());
+    }
+
+    @Test
+    public void testGetRecipeWithIdHandlesException() {
+        when(recipeService.getRecipeById(1)).thenThrow(new RuntimeException("Simulated exception"));
+        ResponseEntity<?> result = recipeController.getRecipeId(1);
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, result.getStatusCode());
+        assertEquals("An error occurred while processing the request.", result.getBody());
     }
 }
