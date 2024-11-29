@@ -75,7 +75,7 @@ The application should now be running on `http://localhost:8080`.
   GET /api/recipes/personal?owner=tm
 ```
 
-**Example Response:**
+#### Example Response:
 
 ```json
 [
@@ -98,14 +98,12 @@ The application should now be running on `http://localhost:8080`.
 ]
 ```
 
-### Example Request:
-
 #### Get recipe by id
 ```sh
   GET /api/recipes/personal/1
 ```
 
-### Example Response:
+#### Example Response:
 
 ```json
 [
