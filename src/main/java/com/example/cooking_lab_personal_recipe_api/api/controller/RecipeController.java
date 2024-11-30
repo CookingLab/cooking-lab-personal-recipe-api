@@ -21,7 +21,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/recipes")
 @Tag(name = "Recipes", description = "Endpoints for managing recipes")
 public class RecipeController {
 
