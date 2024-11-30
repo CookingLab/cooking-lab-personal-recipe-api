@@ -32,6 +32,7 @@ To install this project, follow the steps below:
     ```
 
 The application should now be running on `http://localhost:8080`.
+Swagger UI: `http://localhost:8080/swagger-ui/index.html`.
 
 ## API Endpoints
 
